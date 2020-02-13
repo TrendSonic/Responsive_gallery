@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: gray;
+    font-weight: 500;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 50px;
+}
+
+.img {
+    background-color: #65a3d6;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.images {
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+
+.image_title {
+    text-align: center;
+    color: gray;
+}
+
+.text {
+    margin-top: 60px;
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    #grid {
+        grid-template-columns: repeat(auto-fit, minmax(20%, 27%));
+        justify-content: center;
+   }
+}
+
+@media screen and (max-width: 400px) {
+    #grid {
+        grid-template-columns: repeat(auto-fit, minmax(60%, 60%));
+        justify-content: center;
+   }
+   .head {
+        width: 70%;
+        margin: auto;
+   }
+}
